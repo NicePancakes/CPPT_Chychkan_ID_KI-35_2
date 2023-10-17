@@ -81,9 +81,18 @@ public class Lab1
         {
             for(int j = 0; j < arr[i].length; j++)
             {
-                arr[i][j] = normalizedFiller;
-                System.out.print(arr[i][j] + " ");
-                fout.print(arr[i][j] + " ");
+                if(i < average_n && j == arr[i].length - 1)
+                {
+                    arr[i][j] = '-';
+                    System.out.print(arr[i][j] + " ");
+                    fout.print(arr[i][j] + " ");
+                }
+                else
+                {
+                    arr[i][j] = normalizedFiller;
+                    System.out.print(arr[i][j] + " ");
+                    fout.print(arr[i][j] + " ");
+                }
             }
             System.out.print("\n");
             fout.print("\n");
