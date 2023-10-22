@@ -1,0 +1,5 @@
+Bullet 1 created: Blank
+Bullet is ready
+Bullet assembled:false
+Bullet assembled:true
+Shot! Kind of bullet:Blank
