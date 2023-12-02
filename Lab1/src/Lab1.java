@@ -81,59 +81,14 @@ public class Lab1
         {
             for(int j = 0; j < arr[i].length; j++)
             {
-                if(i < average_n && j == arr[i].length - 1)
-                {
-                    arr[i][j] = '-';
-                    System.out.print(arr[i][j] + " ");
-                    fout.print(arr[i][j] + " ");
-                }
-                else
-                {
-                    arr[i][j] = normalizedFiller;
-                    System.out.print(arr[i][j] + " ");
-                    fout.print(arr[i][j] + " ");
-                }
-            }
-            System.out.print("\n");
-            fout.print("\n");
-        }
-
-
-/*
-        for(int i = 0; i < correctNRows; i++)
-        {
-            if (i == 0)
-            {
-                for(int j = 0; j < arr[i].length; j++)
-                {
-                    System.out.print("+ ");
-                    fout.print("+ ");
-                }
-            }
-
-            System.out.print("\n");
-            fout.print("\n");
-
-            for(int j = 0; j < arr[i].length; j++)
-            {
                 arr[i][j] = normalizedFiller;
                 System.out.print(arr[i][j] + " ");
                 fout.print(arr[i][j] + " ");
             }
-
             System.out.print("\n");
             fout.print("\n");
-
-            if (i == correctNRows - 1)
-            {
-                for(int j = 0; j < arr[i].length; j++)
-                {
-                    System.out.print("+ ");
-                    fout.print("+ ");
-                }
-            }
         }
-*/
+
         fout.flush();
         fout.close();
     }
