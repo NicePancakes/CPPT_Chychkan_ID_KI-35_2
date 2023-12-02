@@ -1,0 +1,41 @@
+n = int(input("Введіть розмір квадратної матриці: "))
+filler = input("Введіть символ-заповнювач: ")
+
+if len(filler) != 1:
+    print("Не коректний символ заповнювач")
+    raise SystemExit
+
+average_n = -(-n // 2)
+arr = []
+
+if n % 2 == 0:
+    for i in range(n):
+        if i <= average_n:
+            if i == average_n:
+                arr.append([''] * i)
+            else:
+                arr.append([''] * (i + 1))
+        else:
+            arr.append([''] * (n - i))
+
+else:
+    for i in range(n):
+        if i < average_n:
+            arr.append([''] * (i + 1))
+        else:
+            arr.append([''] * (n - i))
+
+#normalized_filler = filler[0]
+#with open("MyFile.txt", "w") as fout:
+ #   for i in range(n):
+  #      for j in range(len(arr[i])):
+   #         if i < average_n and j == len(arr[i]) - 1:
+    #            arr[i][j] = '-'
+     #           print(arr[i][j], end=" ")
+      #          fout.write(arr[i][j] + " ")
+       #     else:
+        #        arr[i][j] = normalized_filler
+         #       print(arr[i][j], end=" ")
+          #      fout.write(arr[i][j] + " ")
+        #print()
+        #fout.write("\n")
